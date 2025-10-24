@@ -1,37 +1,37 @@
-public class Employee {
- private int id;
- private String name;
- private double salary;
- public Employee(int id, String name, double salary) {
- this.id = id;
- this.name = name;
- this.salary = salary;
- }
- public void raiseSalary(double percent) {
- if (percent > 0) {
- double raise = salary * (percent / 100);
- salary += raise;
- System.out.println(name + "'s salary raised by " + percent + "%. New salary: " + salary);
- } else {
- System.out.println("Please provide a positive percentage for salary raise.");
- }
- }
- public void displayInfo() {
- System.out.println("Employee ID: " + id);
- System.out.println("Name: " + name);
- System.out.println("Salary: " + salary);
- }
- public static void main(String[] args) {
- // Creating an employee object
- Employee emp = new Employee(1001, "John Doe", 50000);
- // Displaying initial information
- System.out.println("Initial Information:");
- emp.displayInfo();
- // Raising salary by a given percentage
- double raisePercentage = 10; // Example: 10% raise
- emp.raiseSalary(raisePercentage);
- // Displaying updated information after the raise
- System.out.println("\nInformation after salary raise:");
- emp.displayInfo();
- }
+#include<stdio.h>
+
+int main()
+
+{ int fragments[10], blocks [10], files[10]; int m, n, number of blocks, number of files, temp, top0; static int block arr[10], file arr[10]; printf("\nEnter the Total Number of Blocks:\t"); scanf("%d",&number of blocks); printf("Enter the Total Number of Files:\t"); scanf("%d",&number_of_files); printf("\nEnter the Size of the Blocks:\n"); for( m = 0 mnumber_of_blocks; m++)
+
+{ printf("Block No.[%d]:\t", m + 1 ) ; scanf("%d", &blocks[m]);
+
+} printf("Enter the Size of the Files:\n"); for( m = 0 mnumber_of files; m++)
+
+{ printf("File No.[%d]:\t", m + 1 ; scanf("%d", &files[m]);
+
+for( m = 0 m<number_of_files; m++) }
+
+for(n=0;n<number_of_blocks; n++) {
+
+{
+
+if(block_arr[n] != 1)
+
+{
+
+temp blocks[n] - files[m]; if(temp >= 0) if(top <temp) { file_arr[m] = n; top temp; }
+
 }
+
+fragments[m] top; block_arr[file_arr[m]] = 1; top = 0;
+
+printf("\nFile Number\tFile Size\tBlock Number\tBlock Size\tFragment"); for( n = 0 mnumber_of_files; m++)
+
+{ printf("\n%d\t\t%d\t\t%d\t\t%d\t\t%d", m, files[m], file_arr[m], blocks[file_arr[m]], fragments[m]); }
+
+printf("\n");
+
+return 0;
+
+} Output:
